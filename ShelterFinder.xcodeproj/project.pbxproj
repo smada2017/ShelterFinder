@@ -17,6 +17,7 @@
 		326406FB2060435E005697DA /* ShelterFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326406FA2060435E005697DA /* ShelterFinderUITests.swift */; };
 		3264070F20607C55005697DA /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3264070E20607C55005697DA /* ViewController2.swift */; };
 		3264071120608228005697DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3264071020608228005697DA /* GoogleService-Info.plist */; };
+		32F326CD20619285004C46DB /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F326CC20619285004C46DB /* RegisterController.swift */; };
 		4B33C9A8174FEE7DC8F32847 /* Pods_ShelterFinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832063CE755F4BF1E0DEAC0F /* Pods_ShelterFinderUITests.framework */; };
 		CD9ACF9F0557A52E26B67B95 /* Pods_ShelterFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDDDF233EB940630B88D0EA1 /* Pods_ShelterFinderTests.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		326406FC2060435E005697DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3264070E20607C55005697DA /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		3264071020608228005697DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		32F326CC20619285004C46DB /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		41B185C0BEA5707E1729BFD8 /* Pods-ShelterFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShelterFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShelterFinder/Pods-ShelterFinder.debug.xcconfig"; sourceTree = "<group>"; };
 		424EB2C2A35251805F6CEDF4 /* Pods-ShelterFinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShelterFinderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShelterFinderUITests/Pods-ShelterFinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		46CC196E7AEB6CD5C82B7507 /* Pods-ShelterFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShelterFinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShelterFinder/Pods-ShelterFinder.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			children = (
 				326406DA2060435E005697DA /* AppDelegate.swift */,
 				326406DE2060435E005697DA /* Main.storyboard */,
+				32F326CC20619285004C46DB /* RegisterController.swift */,
 				3264070E20607C55005697DA /* ViewController2.swift */,
 				326406DC2060435E005697DA /* ViewController.swift */,
 				326406E12060435E005697DA /* Assets.xcassets */,
@@ -469,6 +472,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32F326CD20619285004C46DB /* RegisterController.swift in Sources */,
 				326406DD2060435E005697DA /* ViewController.swift in Sources */,
 				326406DB2060435E005697DA /* AppDelegate.swift in Sources */,
 				3264070F20607C55005697DA /* ViewController2.swift in Sources */,

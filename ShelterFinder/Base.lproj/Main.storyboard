@@ -67,20 +67,82 @@
             </objects>
             <point key="canvasLocation" x="260" y="107.14285714285715"/>
         </scene>
-        <!--View Controller-->
+        <!--Register Controller-->
         <scene sceneID="CAo-j3-bFT">
             <objects>
-                <viewController id="pwK-zw-f85" sceneMemberID="viewController">
+                <viewController id="pwK-zw-f85" customClass="RegisterController" customModule="ShelterFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fof-6H-uhB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Urx-CQ-ueY">
+                                <rect key="frame" x="88" y="240" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="8D5-Vt-vrn"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QKg-yw-JNt">
+                                <rect key="frame" x="88" y="310" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="eMO-00-T7l"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ad-eZ-7sm">
+                                <rect key="frame" x="239" y="407" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Adminstrator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaW-8j-ON4">
+                                <rect key="frame" x="88" y="417" width="125" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="sep-pS-PjC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SdM-vb-Tid">
+                                <rect key="frame" x="87" y="502" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="sIN-9O-P4f"/>
+                                </constraints>
+                                <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="registerClick:" destination="pwK-zw-f85" eventType="touchUpInside" id="WYE-fn-JXU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6ad-eZ-7sm" firstAttribute="top" secondItem="qaW-8j-ON4" secondAttribute="top" id="0kH-3U-h9A"/>
+                            <constraint firstItem="6ad-eZ-7sm" firstAttribute="centerX" secondItem="Fof-6H-uhB" secondAttribute="centerX" id="1NS-WZ-F0H"/>
+                            <constraint firstItem="Urx-CQ-ueY" firstAttribute="top" secondItem="hvo-R8-1IM" secondAttribute="top" constant="152" id="B7Q-4L-nLC"/>
+                            <constraint firstItem="Urx-CQ-ueY" firstAttribute="centerX" secondItem="Fof-6H-uhB" secondAttribute="centerX" id="E4T-8D-T12"/>
+                            <constraint firstItem="SdM-vb-Tid" firstAttribute="centerX" secondItem="Fof-6H-uhB" secondAttribute="centerX" id="EMA-cB-HKQ"/>
+                            <constraint firstItem="QKg-yw-JNt" firstAttribute="centerX" secondItem="Fof-6H-uhB" secondAttribute="centerX" id="PD0-n8-90z"/>
+                            <constraint firstItem="qaW-8j-ON4" firstAttribute="baseline" secondItem="Urx-CQ-ueY" secondAttribute="baseline" id="QDR-m7-Fob"/>
+                            <constraint firstItem="SdM-vb-Tid" firstAttribute="top" secondItem="6ad-eZ-7sm" secondAttribute="bottom" constant="91" id="hor-qc-D5b"/>
+                            <constraint firstItem="Urx-CQ-ueY" firstAttribute="centerX" secondItem="Fof-6H-uhB" secondAttribute="centerX" id="owi-fm-XQh"/>
+                            <constraint firstItem="6ad-eZ-7sm" firstAttribute="leading" secondItem="qaW-8j-ON4" secondAttribute="trailing" constant="85" id="raY-os-cxL"/>
+                            <constraint firstItem="QKg-yw-JNt" firstAttribute="top" secondItem="Urx-CQ-ueY" secondAttribute="bottom" constant="40" id="uQR-6k-qyx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hvo-R8-1IM"/>
                     </view>
+                    <connections>
+                        <outlet property="adminSlide" destination="6ad-eZ-7sm" id="MVP-Gl-xog"/>
+                        <outlet property="emailText" destination="Urx-CQ-ueY" id="Dq7-au-QXL"/>
+                        <outlet property="passwordText" destination="QKg-yw-JNt" id="2D0-gg-05X"/>
+                        <outlet property="registerButton" destination="SdM-vb-Tid" id="318-p2-0lh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DjR-1P-WfM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="260" y="944"/>
+            <point key="canvasLocation" x="260" y="943.5960591133005"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="wrt-Wf-HYd">
